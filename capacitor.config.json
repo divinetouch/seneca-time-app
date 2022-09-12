@@ -1,0 +1,13 @@
+{
+  "appId": "com.divine.stoic.time",
+  "appName": "stoic time",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "build",
+  "cordova": {},
+  "plugins": {
+    "LocalNotifications": {
+      "smallIcon": "ic_notification_icon"
+    }
+  }
+}

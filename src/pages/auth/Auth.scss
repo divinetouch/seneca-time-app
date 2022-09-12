@@ -1,0 +1,14 @@
+.auth {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  ion-spinner {
+    width: 4rem;
+    height: 4rem;
+    color: var(--ion-color-primary);
+  }
+}

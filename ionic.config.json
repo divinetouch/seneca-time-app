@@ -1,0 +1,7 @@
+{
+  "name": "Stoic Time",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

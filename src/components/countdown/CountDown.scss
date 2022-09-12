@@ -1,0 +1,133 @@
+.card {
+  box-sizing: border-box;
+  position: relative;
+
+  ion-card-header {
+    background-color: var(--ion-color-success-tint);
+    color: #fff;
+  }
+
+  ion-card-content {
+    margin-top: 0.5rem;
+  }
+
+  &.daily-list {
+    &.progress {
+      ion-card-header {
+        background-color: var(--ion-color-danger-tint);
+      }
+    }
+    &.pending {
+      ion-card-header {
+        background-color: #ffc107;
+      }
+    }
+  }
+
+  &.life {
+    ion-card-header {
+      background-color: var(--ion-color-danger-tint);
+    }
+  }
+
+  &.long-term {
+    ion-card-header {
+      background-color: var(--ion-color-danger-tint);
+    }
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-end;
+    color: #fff;
+    font-weight: 400;
+    font-size: 0.8rem;
+    text-overflow: ellipsis;
+
+    &-text {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 1.1rem;
+      align-self: center;
+      flex: 10;
+      color: inherit;
+      font-weight: 500;
+    }
+
+    &-subtext {
+      justify-content: center;
+      margin-top: 0.5rem;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 0.7rem;
+    right: -0.6rem;
+  }
+
+  .data {
+    // color: #333;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    justify-content: center;
+    column-gap: 10px;
+  }
+
+  .data__section {
+    text-align: center;
+    justify-self: center;
+    height: 119px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 10px;
+
+    &--title {
+      margin-bottom: 5px;
+      font-weight: 500;
+    }
+
+    &--container {
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.03);
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+      border-radius: 3px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      overflow: hidden;
+      position: relative;
+      z-index: 100;
+
+      .display {
+        border-radius: 3px;
+        overflow: hidden;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        font-size: 1.2rem;
+        font-weight: 400;
+        z-index: 110;
+        mix-blend-mode: difference;
+        transform: translate3d(0, 0, 0); // fix z-index issue
+      }
+      .animated {
+        display: block;
+        height: 100%;
+        width: 100%;
+        transition: transform 0.5s;
+        z-index: 100;
+      }
+    }
+  }
+}

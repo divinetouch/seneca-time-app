@@ -1,0 +1,33 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  flex: 1;
+  ion-item:not(:first-child) {
+    margin-top: 0.5rem;
+  }
+
+  ion-item > ion-label {
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+
+  ion-item:last-of-type {
+    margin-bottom: 1rem;
+  }
+
+  ion-button {
+    margin-top: 1rem;
+    text-transform: uppercase;
+  }
+
+  ion-toggle {
+    padding: 0.5rem 0;
+  }
+
+  picker-colmuns {
+    ion-picker-columns.picker-col > div.picker-opts {
+      display: none;
+    }
+  }
+}

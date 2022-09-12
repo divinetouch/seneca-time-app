@@ -1,0 +1,19 @@
+.account-form {
+  ion-item:not(:first-child) {
+    margin-top: 0.5rem;
+  }
+
+  .capitalized-input {
+    text-transform: capitalize;
+  }
+
+  ion-item > ion-label {
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+
+  > ion-button {
+    margin-top: 2rem;
+    text-transform: uppercase;
+  }
+}
